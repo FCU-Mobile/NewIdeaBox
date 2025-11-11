@@ -26,8 +26,8 @@ struct IdeaRow: View {
                     .foregroundStyle(idea.isCompleted ? .secondary : .primary)
                     .strikethrough(idea.isCompleted)
 
-                if !idea.description.isEmpty {
-                    Text(idea.description)
+                if !idea.detail.isEmpty {
+                    Text(idea.detail)
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .lineLimit(2)
@@ -39,8 +39,8 @@ struct IdeaRow: View {
 }
 
 #Preview {
-    List {
-        IdeaRow(idea: Idea.mockIdeas[0]) { }
-        IdeaRow(idea: Idea.mockIdeas[2]) { }
-    }
+//    List {
+//        IdeaRow(idea: Idea.mockIdeas[0]) { }
+//        IdeaRow(idea: Idea.mockIdeas[2]) { }
+//    }
 }
